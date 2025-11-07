@@ -1,6 +1,8 @@
 # Description
 This project was created by me and a friend as a project for the course Advanced Web Programming together with @jessicakjellin. Below is our original idea for the project, which we think turned out quite well. 
 
+This project uses **Docker** and **Docker Compose** to run both the Django backend and the React frontend.
+
 ## Original idea
 
 ### Functional requirements:
