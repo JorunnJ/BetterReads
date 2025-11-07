@@ -1,0 +1,273 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f2e4d8;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+header {
+  background-color: #bf9b7a;
+  padding: 10px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+}
+
+header.signup {
+  background-color: #bf9b7a;
+  min-height: 10vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+}
+
+h1 {
+  font-weight: 100;
+}
+
+h2 {
+  font-weight: 250;
+  font-size: 2rem;
+}
+
+p {
+  font-size: 1.2rem;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+.nav-buttons {
+  display: flex;
+  gap: 20px;
+}
+
+button {
+  background-color: #fff;
+  color: #333;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  width: auto;
+  flex: 0 0 auto;
+  height: 50px;
+}
+
+button:hover {
+  background-color: #40210f;
+  color: #fff;
+}
+
+/*css for signin*/
+.signin-form{
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.signin-form-group {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.signin-form input[type="text"],
+.signin-form input[type="password"] {
+  width: 100%;
+  padding: 10px 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  transition: all 0.2s ease-in-out;
+  box-sizing: border-box;
+}
+
+.signin-form input[type="text"]:focus,
+.signin-form input[type="password"]:focus {
+  border-color: #bf9b7a;
+  box-shadow: 0 0 5px rgba(165, 106, 5, 0.3);
+}
+
+.signin-form label {
+  font-size: large;
+  font-style: italic;
+}
+
+.signin-form input[type="submit"] {
+  background-color: #bf9b7a;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+  margin-top: 12px;
+}
+
+.signin-form input[type="submit"]:hover {
+  background-color: #734022;
+}
+
+.signup-link {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.signup-link-btn {
+  width: 100%;
+  padding: 10px 12px;
+  font-size: 16px;
+  border: 1px solid #000;
+  border-radius: 8px;
+  outline: none;
+  transition: all 0.2s ease-in-out;
+  box-sizing: border-box;
+}
+
+.signup-link-btn:hover {
+  border-color: #734022;
+  box-shadow: 0 0 5px rgba(165, 106, 5, 0.3);
+}
+
+
+.signup-divider {
+  width: 300px;
+  text-align: center; 
+  border-bottom: 1px solid #000; 
+  line-height: 0.1em;
+  margin: 10px 0 20px; 
+}
+
+.signup-divider span {
+  background: #f2e4d8; 
+  padding:0 10px; 
+}
+
+.signin {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.profileInfo{
+  align-items: center;
+}
+
+
+.feed-container {
+    max-width: 700px;
+    margin: 2rem auto;
+    padding: 1rem;
+    font-family: 'Georgia', serif;
+    color: #333;
+}
+
+.feed-heading {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    color: #333;
+}
+
+.feed {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.feed-item {
+    display: flex;
+    align-items: flex-start;
+    background-color: #fafafa;
+    padding: 1rem 1.2rem;
+    border: 1px solid #e3e3e3;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+    transition: box-shadow 0.2s ease-in-out;
+    gap: 1rem;
+}
+
+.profile-pic-wrapper {
+    flex-shrink: 0;
+}
+
+.feed-item:hover {
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.feed-header {
+    font-size: 0.95rem;
+    color: #444;
+    margin-bottom: 0.4rem;
+}
+
+.profile-pic {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #bf9b7a;
+}
+
+.username {
+    font-weight: bold;
+    margin-right: 0.5rem;
+}
+
+.shelf-title {
+    font-style: italic;
+    color: #666;
+}
+
+.timestamp {
+    font-size: 0.8rem;
+    color: #999;
+}
+
+.feed-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.book-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+}
+
+.book-cover-feed {
+    width: 100px;
+    height: auto;
+    margin-bottom: 0.4rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
